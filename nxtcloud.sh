@@ -10,6 +10,7 @@ sudo docker run \
 --publish 8443:8443 \
 --env APACHE_PORT=11000 \
 --env APACHE_IP_BINDING=0.0.0.0 \
+--env SKIP_DOMAIN_VALIDATION=true
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
 --volume ~/nxt/data:/var/www/html \
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
