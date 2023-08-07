@@ -22,7 +22,7 @@ sudo docker run \
   --publish 8443:8443 \
   --env APACHE_PORT=11000 \
   --env APACHE_IP_BINDING=0.0.0.0 \
-  --volume "$VOLUME_NAME":/mnt/docker-aio-config \
+  --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
   --volume "$DATA_DIR":/var/www/html \
   --volume /var/run/docker.sock:/var/run/docker.sock:ro \
   nextcloud/all-in-one:latest
